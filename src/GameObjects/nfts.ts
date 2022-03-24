@@ -1,11 +1,12 @@
 import { links } from "src/resource/nftslinks";
 import { NFT } from "../Prefabs/Nft"
 import { NftTriger } from "./NftTriger";
+import { setTimeout } from "@dcl/ecs-scene-utils";
 export function NFTs(building)
 {
   let yms=[3,10.5,15.5,19.5,25.5];
    this.addnftdelay=function(t,k,maxt,i,j)
-  { 
+  {
     for(let k=0;k<maxt;k++)
     {
     if(!t.activeFloors.includes(j))
@@ -18,7 +19,7 @@ export function NFTs(building)
         if(j==4 && i<4)
         continue
         if(j==5)
-        { 
+        {
           s=nftData.scale||new Vector3(30,20,20);
           if(i<=1)
             p=nftData.position||new Vector3(-56.5+(19.7*k),ys[j],(i==0?15:-15))
@@ -26,7 +27,7 @@ export function NFTs(building)
             p=nftData.position||new Vector3((i==2?-66:70),ys[j],0)
         }
         else if(i>=4)
-        { 
+        {
            if(j==0)
            {
              if(i>=6)
@@ -56,7 +57,7 @@ export function NFTs(building)
            }
            else if(j==4)
            {
-             if(i==7) 
+             if(i==7)
              {
                 if(k>=5)
                 continue;
@@ -90,9 +91,9 @@ export function NFTs(building)
     if(this.activeFloors.includes(numberFlor))
     return;
     let j=numberFlor;
-    for (let i = 0; i < this.filedata["floor"+j].length; i++) 
+    for (let i = 0; i < this.filedata["floor"+j].length; i++)
     {
-      setTimeout(()=>this.addnftdelay(this,0,this.filedata["floor"+j][i].length,i,j),0)
+      setTimeout(0,()=>this.addnftdelay(this,0,this.filedata["floor"+j][i].length,i,j))
       //this.addnftdelay(this,0,this.filedata["floor"+j][i].length,i,j);
       /*for (let k = 0; k < this.filedata["floor"+j][i].length; k++)
       {
@@ -107,7 +108,7 @@ export function NFTs(building)
           };
       }*/
     }
-    //log("add floor",numberFlor); 
+    //log("add floor",numberFlor);
   };
   this.removefloorNfts=numberFlor=>
   {
@@ -134,7 +135,7 @@ for(let j=0; j<1; j++)
   this.addfloorNfts(j);
 }
 this.activeFloors=[0,1];
-for (let index = 0; index < 6; index++) 
+for (let index = 0; index < 6; index++)
 {
   let y=7.2+(index-1)*3.5;
   let dy=3;
