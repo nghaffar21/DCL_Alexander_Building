@@ -226,4 +226,3 @@ gltfShape2.isPointerBlocker = true
 gltfShape2.visible = true
 building.addComponentOrReplace(gltfShape2)
 initializebuild(building);
-

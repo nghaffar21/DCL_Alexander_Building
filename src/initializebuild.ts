@@ -44,6 +44,6 @@ export function initializebuild(building)
     //music
     new VideoScene(building); 
     new Music(building);
-    DLA();
+    new DLA(building);
   
 } 
