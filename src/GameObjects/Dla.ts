@@ -43,10 +43,10 @@ this.animator.addClip(new AnimationState("tokensocial",{layer:2})) ;
     this.animator.getClip("tokensocial.003").play();
 
 DLA0(new Vector3(6, 0.9, 25.3), "https://www.digitalandarchitects.com/")
-//DLA0(new Vector3(6, 0.9, 28.7),"https://www.instagram.com/metamall_dcl/")
-//DLA0(new Vector3(6, 0.9, 32.3),"https://metamalldcl.com/")
-//DLA0(new Vector3(6, 0.9, 35.8),"https://twitter.com/DclMeta")
-//DLA0(new Vector3(6, 0.9, 39),"https://discord.com/invite/vkZdaU6RwZ")
+DLA0(new Vector3(6, 0.9, 28.7),"https://www.instagram.com/metamall_dcl/")
+DLA0(new Vector3(6, 0.9, 32.3),"https://metamalldcl.com/")
+DLA0(new Vector3(6, 0.9, 35.8),"https://twitter.com/DclMeta")
+DLA0(new Vector3(6, 0.9, 39),"https://discord.com/invite/vkZdaU6RwZ")
 
 
 

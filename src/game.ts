@@ -220,7 +220,7 @@ const transform20 = new Transform({
   scale: new Vector3(1.006, 1, 1.009)
 })
 building.addComponentOrReplace(transform20)
-const gltfShape2 = new GLTFShape("e7f4045f-cb85-43e5-963c-173760106dbe/Metamall_V9.glb")
+const gltfShape2 = new GLTFShape("e7f4045f-cb85-43e5-963c-173760106dbe/Metamall_V10.glb")
 gltfShape2.withCollisions = true
 gltfShape2.isPointerBlocker = true
 gltfShape2.visible = true
