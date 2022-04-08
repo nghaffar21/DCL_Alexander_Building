@@ -21,5 +21,8 @@
   },
   "bundledDependencies": [
     "@dcl/ecs-scene-utils"
+  ],
+  "bundleDependencies": [
+    "@dcl/ecs-scene-utils"
   ]
 }
